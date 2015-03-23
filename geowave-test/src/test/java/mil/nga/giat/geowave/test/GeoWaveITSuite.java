@@ -9,6 +9,7 @@ import mil.nga.giat.geowave.test.service.GeoWaveServicesIT;
 import mil.nga.giat.geowave.test.service.ServicesTestEnvironment;
 
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
