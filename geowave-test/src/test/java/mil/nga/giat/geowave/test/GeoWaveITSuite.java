@@ -4,10 +4,12 @@ import mil.nga.giat.geowave.test.mapreduce.BasicMapReduceIT;
 import mil.nga.giat.geowave.test.mapreduce.GeoWaveKMeansIT;
 import mil.nga.giat.geowave.test.mapreduce.KDERasterResizeIT;
 import mil.nga.giat.geowave.test.service.GeoServerIT;
+import mil.nga.giat.geowave.test.service.GeoWaveIngestGeoserverIT;
 import mil.nga.giat.geowave.test.service.GeoWaveServicesIT;
 import mil.nga.giat.geowave.test.service.ServicesTestEnvironment;
 
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -15,14 +17,13 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-	GeoWaveBasicIT.class,
-	GeoWaveFeatureCollectionIT.class,
-	GeoWaveRasterIT.class,
-	BasicMapReduceIT.class,
-	KDERasterResizeIT.class,
-	GeoWaveKMeansIT.class,
-	GeoServerIT.class,
-	GeoWaveServicesIT.class
+	/*
+	 * GeoWaveBasicIT.class, GeoWaveFeatureCollectionIT.class,
+	 * GeoWaveRasterIT.class, BasicMapReduceIT.class, KDERasterResizeIT.class,
+	 * GeoWaveKMeansIT.class, GeoServerIT.class, GeoWaveServicesIT.class,
+	 * GeoServerIT.class, GeoWaveServicesIT.class,
+	 */
+	GeoWaveIngestGeoserverIT.class
 })
 public class GeoWaveITSuite
 {
