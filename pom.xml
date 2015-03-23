@@ -20,11 +20,11 @@
 		<connection>scm:git:git@github.com:ngageoint/geowave.git</connection>
 	</scm>
 	<properties>
-		<geotools.version>12.2</geotools.version>
+		<geotools.version>11.5</geotools.version>
 		<hadoop.env.classifier>hadoop2</hadoop.env.classifier>
-		<geoserver.version>2.6.2</geoserver.version>
+		<geoserver.version>2.5.5</geoserver.version>
 		<accumulo.version>1.6.2</accumulo.version>
-		<hadoop.version>2.6.0</hadoop.version>
+		<hadoop.version>2.5.2</hadoop.version>
 		<avro.version>1.7.6</avro.version>
 		<commons.cli.version>1.2</commons.cli.version>
 		<geotools.scope>compile</geotools.scope>
@@ -451,6 +451,7 @@
 						<jacocoReport>${project.basedir}/geowave-types/target/site/jacoco-ut/jacoco.xml</jacocoReport>
 						<jacocoReport>${project.basedir}/geowave-vector/target/site/jacoco-ut/jacoco.xml</jacocoReport>
 						<jacocoReport>${project.basedir}/geowave-accumulo/target/site/jacoco-ut/jacoco.xml</jacocoReport>
+                        <jacocoReport>${project.basedir}/geowave-examples/target/site/jacoco-ut/jacoco.xml</jacocoReport>
 						<jacocoReport>${project.basedir}/geowave-test/target/site/jacoco-it/jacoco.xml</jacocoReport>
 					</jacocoReports>
 				</configuration>
@@ -506,6 +507,7 @@
 		<module>geowave-deploy</module>
 		<module>geowave-benchmark</module>
 		<module>geowave-test</module>
+        <module>geowave-examples</module>
 	</modules>
 	<repositories>
 		<repository>
